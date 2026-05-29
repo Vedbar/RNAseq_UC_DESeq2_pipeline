@@ -37,3 +37,5 @@ The DESeq2 design formula was:
 
 ```r
 design = ~ diagnosis
+
+contrast = c("diagnosis", "Ulcerative_Colitis", "Control")
