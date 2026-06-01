@@ -15,10 +15,8 @@ The pipeline includes:
 
 ## Input data
 
-Raw paired-end FASTQ files were obtained from public RNA-seq datasets. Files should be named as:
-
-Sample_1.fastq.gz
-Sample_2.fastq.gz
+Raw paired-end FASTQ files were obtained from public RNA-seq datasets (SRR646 series). 
+A total of 226 paired-end Illumina reads in FASTQ format were downloaded
 
 ## Reference genome and annotation
 
@@ -26,10 +24,10 @@ Reference genome: Homo sapiens GRCh38
 Annotation file: Homo_sapiens.GRCh38.98.chr.gtf
 
 ## Scripts
-- `1_code_fastqc.sh`: read QC
-- `2_code_trim.sh`: read trimming and quality filtering
-- `3_alignment_code.sh`: HISAT2 alignment, SAMtools sorting, and HTSeq-count
-- `4_DESeq_code.R`: DESeq2 normalization, differential expression, PCA, and MDS
+- `01_code_fastqc.sh`: read QC
+- `02_code_trim.sh`: read trimming and quality filtering
+- `03_alignment_code.sh`: HISAT2 alignment, SAMtools sorting, and HTSeq-count
+- `04_DESeq_code.R`: DESeq2 normalization, differential expression, PCA, and MDS
 
 ## DESeq2 model
 
